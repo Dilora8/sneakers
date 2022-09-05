@@ -1,0 +1,126 @@
+export const state = () => {
+    return{
+        sneakers: [
+            {
+              id: 1,
+              img: "12.jpeg",
+              text: "sneakers",
+              size: "36-44",
+              price: "999",
+              href: "",
+              new: true,
+              discount: false,
+              added: 0,
+            },
+            {
+              id: 2,
+              img: "2.jpeg",
+              text: "zsrtfgjnyhjmn",
+              size: "36-44",
+              price: "999",
+              href: "",
+              new: true,
+              discount: false,
+              added: 0,
+            },
+            {
+              id: 3,
+              img: "3.jpeg",
+              text: "zsrtfgjnyhjmn",
+              size: "36-44",
+              price: "999",
+              href: "",
+              new: true,
+              discount: false,
+              added: 0,
+            },
+            {
+              id: 4,
+              img: "4.jpeg",
+              text: "zsrtfgjnyhjmn",
+              size: "36-44",
+              price: "999",
+              href: "",
+              new: true,
+              discount: false,
+              added: 0,
+            },
+            {
+              id: 5,
+              img: "5.jpeg",
+              text: "zsrtfgjnyhjmn",
+              size: "36-44",
+              price: "999",
+              href: "",
+              new: true,
+              discount: false,
+              added: 0,
+            },
+            {
+              id: 6,
+              img: "1.svg",
+              text: "zsrtfgjnyhjmn",
+              size: "36-44",
+              price: "999",
+              href: "",
+              new: true,
+              discount: false,
+              added: 0,
+            },
+            {
+              id: 7,
+              img: "11.jpeg",
+              text: "zsrtfgjnyhjmn",
+              size: "36-44",
+              price: "999",
+              href: "",
+              new: true,
+              discount: false,
+              added: 0,
+            },
+            {
+              id: 8,
+              img: "3.svg",
+              text: "zsrtfgjnyhjmn",
+              size: "36-44",
+              price: "999",
+              href: "",
+              new: true,
+              discount: false,
+              added: 0,
+            },
+            {
+              id: 9,
+              img: "9.jpeg",
+              text: "zsrtfgjnyhjmn",
+              size: "36-44",
+              price: "999",
+              href: "",
+              new: true,
+              discount: false,
+              added: 0,
+            },
+            {
+              id: 10,
+              img: "10.jpeg",
+              text: "zsrtfgjnyhjmn",
+              size: "36-44",
+              price: "999",
+              href: "",
+              new: true,
+              discount: false,
+              added: 0,
+            },
+          ],
+    }
+}
+
+
+export const getters = {
+    product(state) {
+        return state.sneakers
+    },
+}
+
+
+

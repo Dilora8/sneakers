@@ -1,0 +1,118 @@
+.main_page {
+  width: 100%;
+  height: auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @include flexBox(center, center);
+  .man {
+    margin-right: 80px;
+    position: relative;
+    overflow: hidden;
+
+    .one {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: 0.3s ease-in-out;
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 44px;
+      color: $primary-light;
+      z-index: 1;
+    }
+
+    .hidden {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      transition: 0.2s ease-in-out;
+      background: rgba(0, 0, 0, 0.7);
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      padding-top: 80px;
+      a {
+        color: $primary-light;
+        text-decoration: none;
+        display: block;
+        padding: 5px;
+        text-shadow: 6px 6px 6px $secondary_color;
+      }
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    &:hover {
+      .one {
+        top: 10%;
+        left: 35%;
+        transform: translate(-10%, -40%);
+        text-shadow: 6px 6px 6px black;
+      }
+      .hidden {
+        top: 0%;
+      }
+    }
+  }
+  .women {
+    position: relative;
+    overflow: hidden;
+
+    .one {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: 0.3s ease-in-out;
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 44px;
+      color: $primary-light;
+      z-index: 1;
+    }
+
+    .hidden {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      transition: 0.2s ease-in-out;
+      background: rgba(0, 0, 0, 0.7);
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      text-align: center;
+      padding-top: 80px;
+      a {
+        color: $primary-light;
+        text-decoration: none;
+        display: block;
+        padding: 5px;
+        text-shadow: 6px 6px 6px $secondary_color;
+      }
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    &:hover {
+      .one {
+        top: 10%;
+        left: 35%;
+        transform: translate(-10%, -40%);
+        text-shadow: 6px 6px 6px black;
+      }
+      .hidden {
+        top: 0%;
+      }
+    }
+  }
+  // .women {
+  // }
+}

@@ -1,0 +1,31 @@
+// base
+@import "./base/reset";
+
+// abstracts
+@import "./abstracts/variables";
+@import "./abstracts/mixin";
+
+// components
+
+@import "./components/header";
+@import "./components/card";
+@import "./components/regisration";
+@import "./components/footer";
+
+// pages
+
+@import "./pages/index";
+@import "./pages/main_page";
+@import "./pages/availability";
+@import "./pages/order";
+@import "./pages/discounts";
+@import "./pages/product";
+
+
+.main{
+    position: relative;
+    .header{
+        width: 100%;
+        height: 110px;
+    }
+}

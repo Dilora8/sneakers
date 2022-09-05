@@ -1,0 +1,51 @@
+.main_page{
+    width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @include flexBox(center,center);
+    .man{
+        margin-right: 100px;
+        position: relative;
+        background: url('../images//bart.svg') no-repeat;
+        overflow: hidden;
+        
+        .one{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: .3s ease-in-out;
+        }
+        
+        .hidden{
+            width: 100%;
+            height: 70%;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            transition: .3s ease-in-out;
+        }
+
+        &:hover{
+            .one{
+                top: 10%;
+                left: 50%;
+                transform: translate(-10%, -50%);
+            }
+            .hidden{
+               
+                background-color: red;
+                top: 30%;
+
+                p{
+                    display: block;
+                }
+            }
+        }
+
+    }
+    .women{
+
+    }
+}

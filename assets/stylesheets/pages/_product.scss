@@ -1,0 +1,68 @@
+.product_card {
+  width: 100%;
+  height: auto;
+    @include flexBox(center, center);
+  .content {
+      width: 80%;
+      background: $primary_light;
+      box-shadow: 0px 4px 20px $primary_dark;
+      border-radius: 5px;
+      @include flexBox(space-between,center);
+    .left {
+      @include flexBox(center, center);
+      width: 50%;
+      img {
+        width: 300px;
+        height: 330px;
+      }
+    }
+    .right {
+      width: 50%;
+      .add_sebet {
+        width: 130px;
+        height: 35px;
+        margin-top: 15px;
+        position: relative;
+        cursor: pointer;
+  
+        button {
+          width: 130px;
+          height: 35px;
+          border-radius: 30px;
+          background: $accent_color;
+          padding-right: 25px;
+          border: none;
+          cursor: pointer;
+        }
+        .btns {
+          position: absolute;
+          right: 0;
+          width: 35px;
+          height: 35px;
+        }
+      }
+  
+      .added_sebet{
+        @include flexBox(center, center);
+        color:$secondary_color;
+        margin-top: 10px;
+        margin-bottom: 0;
+        button{
+          width: 40px;
+          height:25px;
+          font-size: 16px;
+          font-weight: 500;
+          border: none;
+          border-radius: 50px;
+          background: $accent-color;
+        }
+        p{
+          font-size: 20px;
+          font-weight: 500;
+          margin: 0 5px;
+          
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@mixin flexBox($x,$y){
+    display: flex;
+    justify-content: $x;
+    align-items: $y;
+}
+
+// @mixin btn($color, $text_color) {
+//     padding: 10px 20px;
+//     background-color: $color;
+//     color: $accent_color;
+//     font-size: 1rem;
+//     font-weight: 400;
+//     line-height: 130%;
+//   }
+  
+  @mixin underline {
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 10px;
+      height: 3px;
+      background-color: $accent_color;
+      transition: 0.3s ease-in-out;
+    }
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+  
+

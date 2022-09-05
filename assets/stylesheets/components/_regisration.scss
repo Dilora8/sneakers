@@ -1,0 +1,99 @@
+.inputs {
+  width: 420px;
+  height: 790px;
+  z-index: 9;
+  background: $primary_light;
+  border-radius: 20px;
+  position: absolute;
+  top: 150px;
+  left: 500px;
+
+  .exit {
+    width: 100%;
+    height: auto;
+    @include flexBox(center, flex-end);
+    padding-left: 372px;
+    padding-top: 24px;
+    cursor: pointer;
+  }
+
+  .content {
+    box-sizing: border-box;
+    margin: 0 auto;
+    p {
+      @include flexBox(center, center);
+      font-weight: 600;
+      font-size: 26px;
+      line-height: 31px;
+    }
+    .forms {
+      @include flexBox(center, center);
+      flex-direction: column;
+      margin-top: 10px;
+      .form {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5px 20px;
+        label {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 20px;
+        }
+        input {
+          width: 350px;
+          height: 40px;
+          font-size: 20px;
+          background: $primary-light;
+          border: 1px solid $secondary_color;
+          border-radius: 8px;
+        }
+      }
+    }
+    .btn {
+      @include flexBox(center, center);
+      flex-direction: column;
+      width: 100%;
+      margin: 50px 0;
+      .btn1 {
+        width: 340px;
+        height: 42px;
+        background: $accent-dark;
+        border-radius: 8px;
+        color: $primary-light;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        border: none;
+        margin-bottom: 20px;
+        cursor: pointer;
+        &:hover{
+          background-color: $accent-color;
+        }
+      }
+     a{
+      text-decoration: none;
+      p {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 19px;
+      }
+     }
+      .btn2 {
+        width: 340px;
+        height: 42px;
+        margin-top: 20px;
+        background: $accent-color;
+        border-radius: 8px;
+        color: $primary-light;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        border: none;
+        cursor: pointer;
+        &:hover{
+          background-color: $accent-dark;
+        }
+      }
+    }
+  }
+}
